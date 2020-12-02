@@ -1,0 +1,25 @@
+#search-bar {
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    justify-items: center;
+}
+
+#search-icon{
+    color: white;
+}
+
+#search-input{
+    width: 100%;
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+#search-input::placeholder{
+    color: white;
+}
