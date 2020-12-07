@@ -1,0 +1,25 @@
+#current-weather-container {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px
+}
+
+#current-weather-icon {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+#current-weather-container h2 {
+    color: white;
+    margin: 0;
+}
+
+.weather-condition{
+    display: inline-block;
+    color: white;
+    margin: 0;
+}

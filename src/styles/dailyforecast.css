@@ -1,0 +1,17 @@
+#forecast-container {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.daily-weather {
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+    justify-items: center;
+    align-items: center;
+    color: white;
+}
+
+.forecast-icon {
+    height: 30px;
+    width: 30px;
+}
