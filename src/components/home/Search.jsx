@@ -24,6 +24,7 @@ const Search = inject('inputs', 'currentCity')(observer((props) => {
     function onSearchSubmit(cityId, cityName) {
         currentCity.loadCity(cityId, cityName)
         inputs.setCitySearch('')
+        setInputResults([])
     }
 
     return (

@@ -7,7 +7,7 @@ import HomePage from './home/HomePage'
 function Container() {
 
     return (
-        <div id='container' className='sunny-night'>
+        <div id='container'>
             <Route exact path='/'>
                 <Redirect to="/home"/>
             </Route>
