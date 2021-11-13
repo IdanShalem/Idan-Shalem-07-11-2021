@@ -1,0 +1,20 @@
+.favorite-city-card {
+    display: grid;
+    grid-template-columns: 60% 25% 15%;
+    justify-items: start;
+    align-items: center;
+    border: 2px solid rgba(255,255,255,0.3);
+    padding: 15px 10px;
+    border-radius: 10px;
+    color: #fff;
+    margin: 10px 0
+}
+
+.favorite-city-card img {
+    width: 100%;
+    height: auto;
+}
+
+.favorite-city-card p {
+    margin: 0;
+}

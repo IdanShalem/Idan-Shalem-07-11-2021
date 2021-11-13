@@ -6,14 +6,18 @@
     margin-top: 5px
 }
 
+#current-weather-header{
+    color: white;
+}
+
 #current-weather-icon {
-    width: 100px;
+    width: 150px;
     height: 100px;
     display: block;
     margin: auto;
 }
 
-#current-weather-container h2 {
+#current-weather-container h3 {
     color: white;
     margin: 0;
 }
@@ -22,4 +26,20 @@
     display: inline-block;
     color: white;
     margin: 0;
+}
+
+.star {
+    background-color: #efefef;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid #767676;
+    font-size: 0.9rem;
+}
+
+.star.true {
+    color: #e8c32c;
+}
+
+.star.false {
+    color: gray
 }

@@ -1,13 +1,27 @@
-import { makeObservable, observable } from 'mobx'
+import { makeObservable, observable, action } from 'mobx'
 
-class Inputs {
+export default class Inputs {
 
     constructor() {
-        citySearch: '',
-        units: 'C',
-        makeObservable({
+        this.citySearch = ''
+        this.units = 'celsius'
+        makeObservable(this, {
             citySearch: observable,
-            units: observable
+            units: observable,
+            setCitySearch: action,
+            setUnits: action
         })
+    }
+
+    setCitySearch(value) {
+        this.citySearch = value
+    }
+
+    setUnits() {
+        if(this.units === 'celsius') {
+            this.units = 'fahrenheit'
+        } else {
+            this.units = 'celsius'
+        }
     }
 }

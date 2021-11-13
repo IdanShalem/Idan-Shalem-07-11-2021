@@ -1,0 +1,6 @@
+#home-page-container {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 7% 35% 58%;
+    height: 100%;
+}

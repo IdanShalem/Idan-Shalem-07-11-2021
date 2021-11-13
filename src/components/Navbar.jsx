@@ -12,7 +12,7 @@ function Navbar() {
                     <FontAwesomeIcon icon={faHome} />
                 </div>
             </Link> 
-            <Link to='/favourites'>
+            <Link to='/favorites'>
                 <div className='nav-button' id='fav-button'>
                     <FontAwesomeIcon icon={faHeart} />
                 </div>

@@ -1,37 +1,4 @@
 #container {
     padding: 2vh;
-    overflow: auto;
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 7% 40% 53%;
-}
-
-.sunny-day {
-    background-color: #3392b5;
-    background-image: linear-gradient(330deg, #3392b5 0%, #a5e9f0 100%);
-}
-
-.sunny-night {
-    background-color: #03476e;
-    background-image: linear-gradient(330deg, #03476e 0%, #398caf 100%);
-}
-
-.rain-day {
-    background-color: #140373;
-    background-image: linear-gradient(330deg, #140373 0%, #1d78d6 100%);
-}
-
-.rain-night {
-    background-color: #3c294e;
-    background-image: linear-gradient(330deg, #3c294e 0%, #a173b5 100%);
-}
-
-.snow-day {
-    background-color: #147aea;
-    background-image: linear-gradient(330deg, #147aea 0%, #83d1f0 100%);
-}
-
-.snow-night {
-    background-color: #214a34;
-    background-image: linear-gradient(330deg, #214a34 0%, #4faa85 100%);
+    overflow: scroll;
 }

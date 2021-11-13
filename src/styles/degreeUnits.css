@@ -1,0 +1,23 @@
+#degrees-container {
+    padding: 5px;
+}
+
+#degress-units-toggle {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    width: fit-content;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.units.active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.units {
+    padding: 3px 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+}

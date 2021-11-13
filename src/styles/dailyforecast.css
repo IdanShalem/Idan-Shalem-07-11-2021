@@ -5,8 +5,8 @@
 
 .daily-weather {
     display: grid;
-    grid-template-columns: 10% 50% 40%;
-    justify-items: center;
+    grid-template-columns: 60% 20% 20%;
+    justify-items: flex-end;
     align-items: center;
     color: white;
 }
@@ -14,4 +14,8 @@
 .forecast-icon {
     height: 30px;
     width: 30px;
+}
+
+.forecast-day {
+    justify-self: start;
 }
