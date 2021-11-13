@@ -1,7 +1,7 @@
 import { action, makeObservable, observable } from "mobx"
 import axios from 'axios'
 
-const apiURL = 'http://dataservice.accuweather.com/'
+const apiURL = 'https://dataservice.accuweather.com/'
 const apiKey = 'NaUGym7DdARqCHoymoeJSZIMovlptGAz'
 
 export default class CurrentCity {
