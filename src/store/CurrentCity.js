@@ -66,6 +66,7 @@ export default class CurrentCity {
         axios
             .get(`${apiURL}forecasts/v1/daily/5day/${this.cityId}?apikey=${apiKey}&metric=true`)
             .then((resCelsius) => {
+                this.dailyForecast = []
                 const dailyForecastCelsius = resCelsius.data.DailyForecasts
                 axios
                     .get(`${apiURL}forecasts/v1/daily/5day/${this.cityId}?apikey=${apiKey}`)
