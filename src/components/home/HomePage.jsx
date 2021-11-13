@@ -18,11 +18,11 @@ const HomePage = inject('currentCity')(observer((props) => {
 
     return (
         <div id="home-page-container">
+            <Search />
             {
                 cityLoaded 
                     ?
                         [
-                            <Search />,
                             <CurrentWeather />,
                             <DailyForecast />
                         ]
