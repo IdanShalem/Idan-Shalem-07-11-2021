@@ -1,5 +1,5 @@
 import { inject, observer } from 'mobx-react'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import '../../styles/homePage.css'
 import CurrentWeather from './CurrentWeather'
 import DailyForecast from './DailyForecast'

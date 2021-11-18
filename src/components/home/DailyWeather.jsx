@@ -22,7 +22,7 @@ const DailyWeather = inject('inputs')(observer((props) => {
     return (
         <div className="daily-weather">
             <p className='forecast-day'>{day.dayName}</p>
-            {icon ? <img className="forecast-icon" src={icon}/> : <span></span>}
+            {icon ? <img className="forecast-icon" src={icon} alt="weather icon"/> : <span></span>}
             <p className='forecast-deg'>{day.temp[inputs.units]}&deg;{inputs.units === 'celsius' ? 'C' : 'F'}</p>
         </div>
     )

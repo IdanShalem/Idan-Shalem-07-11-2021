@@ -26,8 +26,6 @@ const FavoriteCity = inject('currentCity', 'inputs')(observer((props) => {
                 let weatherIcon = cityDetails.WeatherIcon.toString()
                 if(weatherIcon.length === 1) {
                     weatherIcon = `0${weatherIcon}`
-                } else {
-                    weatherIcon = weatherIcon
                 }
                 tempObj.icon = loadIcon(weatherIcon)
                 setCurrentTemp(tempObj)

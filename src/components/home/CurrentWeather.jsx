@@ -26,7 +26,7 @@ const CurrentWeather = inject('currentCity', 'inputs')(observer((props) => {
 
     return(
         <div id='current-weather-container'>
-            <img id='current-weather-icon' src={icon}/>
+            <img id='current-weather-icon' src={icon} alt="weather icon" />
             <h3>
                 {currentCity.name}
                 &nbsp;

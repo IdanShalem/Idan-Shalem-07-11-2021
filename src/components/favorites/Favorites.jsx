@@ -9,7 +9,7 @@ const Favorites = inject('currentCity')(observer((props) => {
 
     useEffect(() => {
         setSavedCities(currentCity.getParsedLocalStorage())
-    }, [])
+    }, [currentCity])
 
     return (
         <div id="favorites-container">
