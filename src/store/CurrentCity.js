@@ -18,6 +18,7 @@ export default class CurrentCity {
         this.icon = ''
         this.dailyForecast = []
         this.isFavorite = null
+        this.cityLoaded = false
         makeObservable(this, {
             cityId: observable,
             name: observable,
@@ -27,6 +28,7 @@ export default class CurrentCity {
             icon: observable,
             dailyForecast: observable,
             isFavorite: observable,
+            cityLoaded: observable,
             getCityId: action,
             getCityDetails: action,
             getDailyForecast: action,
@@ -103,6 +105,7 @@ export default class CurrentCity {
     }
 
     async loadCity(cityId, cityName) {
+        this.cityLoaded = false
         let cityCondition
         
         if(cityId) {
@@ -134,6 +137,7 @@ export default class CurrentCity {
             this.isFavorite = true
         }
         await this.getDailyForecast()
+        this.cityLoaded = true
         return true
     }
 

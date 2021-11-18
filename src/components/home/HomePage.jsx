@@ -3,30 +3,28 @@ import React, { useEffect, useState } from 'react'
 import '../../styles/homePage.css'
 import CurrentWeather from './CurrentWeather'
 import DailyForecast from './DailyForecast'
+import Loader from './Loader'
 import Search from './Search'
 
 const HomePage = inject('currentCity')(observer((props) => {
 
     const { currentCity } = props
 
-    const [cityLoaded, setCityLoaded] = useState(false)
-
     useEffect(async () => {
         if(!currentCity.cityId) await currentCity.loadCity()
-        setCityLoaded(true)
     }, [])
 
     return (
         <div id="home-page-container">
             <Search />
             {
-                cityLoaded 
+                currentCity.cityLoaded 
                     ?
                         [
                             <CurrentWeather />,
                             <DailyForecast />
                         ]
-                    :   null
+                    :   <Loader />
             }
         </div>
         
