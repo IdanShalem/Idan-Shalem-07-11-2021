@@ -12,8 +12,8 @@
 }
 
 .forecast-icon {
-    height: 30px;
-    width: 30px;
+    height: auto;
+    width: 100%;
 }
 
 .forecast-day {

@@ -11,8 +11,8 @@
 }
 
 #current-weather-icon {
-    width: 150px;
-    height: 100px;
+    width: 100%;
+    height: auto;
     display: block;
     margin: auto;
 }

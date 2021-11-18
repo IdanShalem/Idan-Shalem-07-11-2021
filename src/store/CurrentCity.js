@@ -2,7 +2,7 @@ import { action, makeObservable, observable } from "mobx"
 import axios from 'axios'
 
 const apiURL = 'https://dataservice.accuweather.com/'
-const apiKey = 'NaUGym7DdARqCHoymoeJSZIMovlptGAz'
+const apiKey = 'zLqbG4S5XVK66YOXhzgYFjHK7Mjp9JfZ'
 
 export default class CurrentCity {
 
@@ -127,13 +127,13 @@ export default class CurrentCity {
         this.temp.celsius = cityCondition.Temperature.Metric.Value
         this.temp.fahrenheit = cityCondition.Temperature.Imperial.Value
         this.condition = cityCondition.WeatherText
-        this.isDayTime = cityCondition.isDayTime
+        this.isDayTime = cityCondition.IsDayTime
         if(this.findCitySaved() === -1) {
             this.isFavorite = false
         } else {
             this.isFavorite = true
         }
-        this.getDailyForecast()
+        await this.getDailyForecast()
         return true
     }
 

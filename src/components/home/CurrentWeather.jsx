@@ -11,7 +11,7 @@ const CurrentWeather = inject('currentCity', 'inputs')(observer((props) => {
     
     useEffect(() => {
         if(currentCity.icon) loadIcon(currentCity.icon)
-    }, [])
+    }, [currentCity.icon])
 
     const loadIcon = (id) => {
         import(`../../Images/weatherIcons/${id}.png`)
